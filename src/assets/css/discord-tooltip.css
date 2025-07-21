@@ -1,0 +1,307 @@
+:root {
+    --main-color: #2e8b57;
+    --main-dark: #1e5631;
+    --accent-orange: #ff7f50;
+    --accent-purple: #8a2be2;
+    --discord-blue: #5865F2;
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --bg-card: #242424;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #808080;
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Verbesserte Social Discord Element Styles */
+.social-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.08), rgba(138, 43, 226, 0.05));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.social-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+            radial-gradient(circle at 20% 20%, rgba(88, 101, 242, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.tooltip-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.3),
+            0 0 20px rgba(88, 101, 242, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.profile {
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.9), rgba(88, 101, 242, 0.8));
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid rgba(88, 101, 242, 0.3);
+    min-width: 220px;
+    backdrop-filter: blur(15px);
+}
+
+.tooltip-container:hover .tooltip {
+    top: -170px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.layer {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.social-icon:hover .layer {
+    transform: rotate(-35deg) skew(20deg) scale(1.1);
+}
+
+.layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #5865f2;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(88, 101, 242, 0.1);
+}
+
+.social-icon:hover .layer span {
+    box-shadow:
+            -2px 2px 8px rgba(88, 101, 242, 0.4),
+            inset 0 0 10px rgba(88, 101, 242, 0.2);
+}
+
+.discord-text {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5865f2;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover .discord-text {
+    bottom: -40px;
+    opacity: 1;
+}
+
+.social-icon:hover .layer span:nth-child(1) {
+    opacity: 0.3;
+    background: rgba(88, 101, 242, 0.15);
+}
+.social-icon:hover .layer span:nth-child(2) {
+    opacity: 0.5;
+    transform: translate(6px, -6px);
+    background: rgba(88, 101, 242, 0.2);
+}
+.social-icon:hover .layer span:nth-child(3) {
+    opacity: 0.7;
+    transform: translate(12px, -12px);
+    background: rgba(88, 101, 242, 0.25);
+}
+.social-icon:hover .layer span:nth-child(4) {
+    opacity: 0.9;
+    transform: translate(18px, -18px);
+    background: rgba(88, 101, 242, 0.3);
+}
+.social-icon:hover .layer span:nth-child(5) {
+    opacity: 1;
+    transform: translate(24px, -24px);
+    background: rgba(88, 101, 242, 0.4);
+}
+
+.layer span.fab {
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    fill: #5865f2;
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.9), rgba(26, 26, 26, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.img {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+    color: #5865f2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.username {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.about {
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.social-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-primary);
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #5865f2, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 5;
+}
+
+.social-description {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Glow-Effekt für bessere Sichtbarkeit */
+.tooltip-container::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, transparent, rgba(88, 101, 242, 0.1), transparent);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.tooltip-container:hover::before {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-section {
+        padding: 60px 20px;
+    }
+
+    .social-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .social-description {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .layer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .layer span.fab {
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
