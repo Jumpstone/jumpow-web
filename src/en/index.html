@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrüneEule</title>
+    <link rel="icon" href="/assets/img/v2/js.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/discord-tooltip.css">
+    <link rel="stylesheet" href="/assets/css/github-button.css">
+</head>
+<body>
+<div class="bg-animation"></div>
+<div id="header-en-container"></div>
+<main>
+    <li class="language-item">
+        <div class="language-switch-container">
+            <button class="language-switch-btn" id="languageSwitch">
+                <span class="language-flag">🇬🇧</span>
+                <span class="language-code">EN</span>
+            </button>
+            <div class="language-dropdown" id="languageDropdown">
+                <a href="#" data-lang="de" class="language-option">
+                    <span class="language-flag">🇩🇪</span>
+                    <span>Deutsch</span>
+                </a>
+                <a href="#" data-lang="en" class="language-option">
+                    <span class="language-flag">🇬🇧</span>
+                    <span>English</span>
+                </a>
+            </div>
+        </div>
+    </li>
+
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="theme-toggle">☀️</button>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <img src="/assets/img/js.png" alt="JS Logo" class="hero-logo">
+            <h1>JumpStone</h1>
+            <div class="btn-container">
+                <a href="#projects" class="cta-button">My Projects</a>
+                <a href="#blog" class="cta-button">Blog</a>
+                <a href="https://grueneeule.de/dc" class="cta-button btn-secondary" target="_blank" rel="noopener noreferrer">Join GrüneEule Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="news-section">
+        <div class="container">
+            <h2 class="section-title">My Blog</h2>
+            <h5 class="section-title">Currently not in English!</h5>
+            <div class="news-grid" id="news-container">
+                <!-- News werden hier via JavaScript eingefügt -->
+            </div>
+            <div class="text-center">
+                <a href="/en/blog/blog.html" class="cta-button">All Blogs</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Projekte werden hier dynamisch eingefügt -->
+            </div>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <div class="social-container">
+            <h2>Connect with me</h2>
+            <p class="social-description">
+                Join our Discord community and receive direct support, updates, and engage with other users!
+            </p>
+            <div class="tooltip-container">
+                <div class="tooltip">
+                    <div class="profile">
+                        <div class="user">
+                            <img src="https://grueneeule.de/assets/img/v2/GE-Symbol-Square_White_on_Green.png" alt="GrüneEule Logo" class="img">
+                            <div class="details">
+                                <div class="name">GrüneEule</div>
+                                <div class="username">Discord Guild</div>
+                            </div>
+                        </div>
+                        <div class="about">Coding Community</div>
+                    </div>
+                </div>
+                <div class="text">
+                    <a href="https://grueneeule.de/l/dc" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <div class="layer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="fab">
+                                <svg
+                                        preserveAspectRatio="xMidYMid"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 -3.117 28 28"
+                                        height="35"
+                                        width="35"
+                                >
+                                    <path
+                                            fill="#5865F2"
+                                            d="M23.719 1.815A22.8 22.8 0 0 0 17.942 0c-.249.45-.54 1.055-.74 1.536q-3.231-.486-6.402 0C10.6 1.055 10.302.45 10.051 0A22.7 22.7 0 0 0 4.27 1.82C.614 7.344-.377 12.731.119 18.042c2.425 1.811 4.775 2.911 7.085 3.63a17.6 17.6 0 0 0 1.517-2.499 15 15 0 0 1-2.389-1.163 12 12 0 0 0 .586-.463c4.607 2.155 9.613 2.155 14.165 0a14 14 0 0 0 .586.463 15 15 0 0 1-2.394 1.165c.438.877.945 1.714 1.517 2.499 2.312-.72 4.664-1.82 7.089-3.633.581-6.156-.993-11.494-4.162-16.227M9.349 14.776c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c.002 1.572-1.11 2.863-2.517 2.863m9.302 0c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c0 1.572-1.11 2.863-2.517 2.863"
+                                    ></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="discord-text">Discord</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Widget Section -->
+    <section class="status-widget">
+        <div class="container">
+            <h2 class="section-title">Current Systemstatus</h2>
+            <div id="status-container" class="status-container">
+                <div class="loading">Loading status information...</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-en-container"></div>
+</main>
+
+<button class="scroll-top" aria-label="Nach oben scrollen">↑</button>
+
+<script src="/assets/js/ui.js"></script>
+<script src="/assets/js/load-header.js"></script>
+<script src="/assets/js/load-footer.js"></script>
+<script src="/assets/js/news.js"></script>
+<script src="/assets/js/load-projects.js"></script>
+<script src="/assets/js/status-api.js"></script>
+<script src="/assets/js/language.js"></script>
+</script>
+</body>
+</html>

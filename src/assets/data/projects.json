@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "discord",
+      "title": "GrüneEule",
+      "description": "GrüneEule Community, Tools und mehr!!",
+      "features": [
+        "Community",
+        "Coding",
+        "Tools",
+        "Und vieles mehr!"
+      ],
+      "primaryButton": {
+        "text": "Mehr",
+        "url": "https://grueneeule.de",
+        "class": "btn-discord"
+      },
+      "secondaryButton": null,
+      "cardClass": "toollab-card"
+    },
+    {
+      "id": "discord",
+      "title": "JS Blog",
+      "description": "Erfahre mehr über mich indem du meinen Blog liest:",
+      "features": [
+        "Englisch und Deutsch",
+        "Coding",
+        "Tools",
+        "Und vieles mehr!"
+      ],
+      "primaryButton": {
+        "text": "Mehr",
+        "url": "/blog",
+        "class": "btn-discord"
+      },
+      "secondaryButton": null,
+      "cardClass": "discord-card"
+    }
+  ]
+}

@@ -1,124 +1,52 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich | JumpStone</title>
-    <link rel="icon" href="/assets/img/js.png" type="image/png">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/discord-tooltip.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Language Redirect</title>
+    <script>
+        // Mapping: Sprachpräfix -> Ziel-URL
+        const targets = {
+            'de': '/de/about/',   // Deutsch
+            'en': '/en/about/',   // Englisch
+        };
+
+        // Standardziel, falls keine passende Sprache gefunden wurde
+        const defaultTarget = '/en';
+
+        function getPreferredLang() {
+            // navigator.languages ist ein Array der präferierten Sprachen
+            const langs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+            for (const l of langs) {
+                if (!l) continue;
+                // z.B. "de-DE" -> "de"
+                const prefix = l.split('-')[0].toLowerCase();
+                if (prefix) return prefix;
+            }
+            return null;
+        }
+
+        (function() {
+            const lang = getPreferredLang();
+            const target = (lang && targets[lang]) ? targets[lang] : defaultTarget;
+
+            // Optional: inkognito eine kleine Info anzeigen bevor umgeleitet wird (nützlich beim Testen)
+            // document.body.textContent = `Weiterleitung nach ${target} (Sprache: ${lang || 'unbekannt'})...`;
+
+            // Direkt weiterleiten (ersetze current history entry)
+            window.location.replace(target);
+            // Alternative: window.location.href = target; (legt neues History-Element an)
+        })();
+    </script>
 </head>
 <body>
-<div class="bg-animation"></div>
-<div id="header-container"></div>
-<main>
-    <section class="hero">
-        <div class="container">
-            <img src="/assets/img/js.png" alt="Profil Logo" class="hero-logo">
-            <h1>JumpStone</h1>
-            <p>Über mich</p>
-            <div class="btn-container">
-                <a href="#about" class="cta-button">Über mich</a>
-                <a href="#projects" class="cta-button btn-secondary">Meine Projekte</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="projects">
-        <div class="container">
-            <h2 class="section-title">💬 Über mich</h2>
-            <div class="projects-grid">
-                <article class="project-card fade-in">
-                    <div class="project-card-content">
-                        <p>Ich bin ein junger Technik-Enthusiast aus Deutschland mit einer Leidenschaft für Server, Programmierung und kreative Online-Projekte. In meiner Freizeit beschäftige ich mich gerne mit Minecraft-Servern, Webentwicklung und digitalen Tools, die den Alltag smarter machen.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="projects">
-        <div class="container">
-            <h2 class="section-title">🧠 Interessen & Fähigkeiten</h2>
-            <div class="projects-grid">
-                <article class="project-card fade-in">
-                    <div class="project-card-content">
-                        <ul>
-                            <li>⚙️ Minecraft-Serverentwicklung (Velocity, Plugins, Crossplay-Support)</li>
-                            <li>🕸️ Webentwicklung (Darkmode-Designs, Discord OAuth2, Dashboards)</li>
-                            <li>🐧 Servermanagement (Pterodactyl, Hosting-Konzepte, Ressourcenoptimierung)</li>
-                            <li>💡 Technik-Projekte (z. B. smarte Lichtsteuerung mit ESP8266 & Raspberry Pi)</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">🔧 Eigene Projekte</h2>
-            <div class="projects-grid">
-                <article class="project-card fade-in">
-                    <h3>DMH-Network</h3>
-                    <div class="project-card-content">
-                        <p>Minecraft-Netzwerk</p>
-                    </div>
-                    <a href="https://dmh-network.de" class="cta-button btn">Mehr</a>
-                </article>
-                <article class="project-card fade-in">
-                    <h3>GrüneEule</h3>
-                    <div class="project-card-content">
-                        <p>Website mit Discord-Dashboard, virtueller Eulen-Zucht und OAuth2-Login.</p>
-                    </div>
-                    <a href="https://grueneeule.de" class="cta-button btn">Mehr</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="tech" class="projects">
-        <div class="container">
-            <h2 class="section-title">🌐 Technischer Stack</h2>
-            <div class="projects-grid">
-                <article class="project-card fade-in">
-                    <h3>Sprachen & Tools</h3>
-                    <div class="project-card-content">
-                        <p>Lerne: HTML, CSS, JS</p>
-                    </div>
-                </article>
-                <article class="project-card fade-in">
-                    <h3>Systeme</h3>
-                    <div class="project-card-content">
-                        <p>Linux-Server, Raspberry Pi, ESP8266, Powerbanks, Netzwerktechnik</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="misc" class="projects">
-        <div class="container">
-            <h2 class="section-title">🧩 Sonstiges</h2>
-            <div class="projects-grid">
-                <article class="project-card fade-in">
-                    <div class="project-card-content">
-                        <ul>
-                            <li>🎮 Minecraft-Spieler & Developer seit vielen Jahren</li>
-                            <li>🎓 Schüler mit technischem Fokus</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    <div id="footer-container"></div>
-</main>
-
-<button class="scroll-top" aria-label="Nach oben scrollen">↑</button>
-
-<script src="/assets/js/ui.js"></script>
-<script src="/assets/js/load-footer.js"></script>
-<script src="/assets/js/load-header.js"></script>
+<!-- Falls JS deaktiviert ist, zeigt eine Auswahl -->
+<noscript>
+    <p>Javascript ist deaktiviert. Bitte manuell die richtige Seite wählen:</p>
+    <ul>
+        <li><a href="/de/about/">Deutsch</a></li>
+        <li><a href="/en/about/">English</a></li>
+    </ul>
+</noscript>
 </body>
 </html>

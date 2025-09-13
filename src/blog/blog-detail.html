@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect</title>
+    <script>
+        // Sprache festlegen (z.B. automatisch über Browser, sonst Standard 'de')
+        const userLang = navigator.language.startsWith('en') ? 'en' : 'de';
+
+        // Hole den aktuellen Pfad und Query-Parameter
+        const path = window.location.pathname; // z.B. /test.html
+        const query = window.location.search;  // z.B. ?id=1
+
+        // Baue die neue URL
+        const redirectUrl = `/${userLang}${path}${query}`;
+
+        // Wenn die aktuelle URL noch nicht die richtige Sprache enthält, weiterleiten
+        if (!path.startsWith(`/${userLang}/`)) {
+            window.location.href = redirectUrl;
+        }
+    </script>
+</head>
+<body>
+Redirecting...
+</body>
+</html>

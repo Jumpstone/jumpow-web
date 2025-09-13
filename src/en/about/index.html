@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | JumpStone</title>
+    <link rel="icon" href="/assets/img/js.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/discord-tooltip.css">
+</head>
+<body>
+<div class="bg-animation"></div>
+<div id="header-en-container"></div>
+<main>
+    <li class="language-item">
+        <div class="language-switch-container">
+            <button class="language-switch-btn" id="languageSwitch">
+                <span class="language-flag">🇬🇧</span>
+                <span class="language-code">EN</span>
+            </button>
+            <div class="language-dropdown" id="languageDropdown">
+                <a href="#" data-lang="de" class="language-option">
+                    <span class="language-flag">🇩🇪</span>
+                    <span>Deutsch</span>
+                </a>
+                <a href="#" data-lang="en" class="language-option">
+                    <span class="language-flag">🇬🇧</span>
+                    <span>English</span>
+                </a>
+            </div>
+        </div>
+    </li>
+
+    <section class="hero">
+        <div class="container">
+            <img src="/assets/img/js.png" alt="Profile Logo" class="hero-logo">
+            <h1>JumpStone</h1>
+            <p>About Me</p>
+            <div class="btn-container">
+                <a href="#about" class="cta-button">About Me</a>
+                <a href="#projects" class="cta-button btn-secondary">My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="projects">
+        <div class="container">
+            <h2 class="section-title">💬 About Me</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <div class="project-card-content">
+                        <p>I am a young tech enthusiast from Germany with a passion for servers, programming, and creative online projects. In my free time, I enjoy working with Minecraft servers, web development, and digital tools that make everyday life smarter.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="projects">
+        <div class="container">
+            <h2 class="section-title">🧠 Interests & Skills</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <div class="project-card-content">
+                        <ul>
+                            <li>⚙️ Minecraft server development (Velocity, plugins, crossplay support)</li>
+                            <li>🕸️ Web development (WebStorm, Discord OAuth2, dashboards)</li>
+                            <li>🐧 Server management (Pterodactyl, hosting concepts, resource optimization)</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="projects">
+        <div class="container">
+            <h2 class="section-title">🌐 My Tools</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <h3>Web Development</h3>
+                    <div class="project-card-content">
+                        <p>WebStorm, GitHub, NGINX</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div id="footer-en-container"></div>
+</main>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="/assets/js/ui.js"></script>
+<script src="/assets/js/load-footer.js"></script>
+<script src="/assets/js/load-header.js"></script>
+<script src="/assets/js/language.js"></script>
+</body>
+</html>

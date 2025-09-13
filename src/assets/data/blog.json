@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "slug": "news-modul-endlich-fertig",
+    "title": "News Modul endlich fertig!",
+    "date": "2025-07-22",
+    "content": "Wir freuen uns, unser neues News Modul vorzustellen!",
+    "fullContentPath": "/assets/data/news/1.md"
+  },
+  {
+    "id": 2,
+    "slug": "twfee-release",
+    "title": "tWfEE RELEASE JETZT ONLINE",
+    "date": "2025-07-23",
+    "content": "Die tWfEE Seite wurde veröffentlich!",
+    "fullContentPath": "/assets/data/news/2.md"
+  }
+]
