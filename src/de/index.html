@@ -1,144 +1,197 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrüneEule</title>
-    <link rel="icon" href="/assets/img/v2/js.png" type="image/png">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/discord-tooltip.css">
-    <link rel="stylesheet" href="/assets/css/github-button.css">
-</head>
-<body>
-<div class="bg-animation"></div>
-<div id="header-container"></div>
-<main>
-    <li class="language-item">
-        <div class="language-switch-container">
-            <button class="language-switch-btn" id="languageSwitch">
-                <span class="language-flag">🇩🇪</span>
-                <span class="language-code">DE</span>
-            </button>
-            <div class="language-dropdown" id="languageDropdown">
-                <a href="#" data-lang="de" class="language-option">
-                    <span class="language-flag">🇩🇪</span>
-                    <span>Deutsch</span>
-                </a>
-                <a href="#" data-lang="en" class="language-option">
-                    <span class="language-flag">🇬🇧</span>
-                    <span>English</span>
-                </a>
-            </div>
-        </div>
-    </li>
-
-    <div class="theme-toggle-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JumpStone</title>
+    <link
+      rel="icon"
+      href="/assets/img/1.1 (550x550).png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/discord-tooltip.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/github-button.css"
+    />
+    <link rel="stylesheet" href="/assets/css/socials.css" />
+    <link rel="stylesheet" href="/assets/css/source-button.css" />  </head>
+  <body>
+    <div class="bg-animation"></div>
+    <div id="header-container"></div>
+    <main>
+      <div class="theme-toggle-container">
         <button id="theme-toggle" class="theme-toggle">☀️</button>
-    </div>
+      </div>
 
-    <section class="hero">
+      <section class="hero">
         <div class="container">
-            <img src="/assets/img/js.png" alt="JS Logo" class="hero-logo">
-            <h1>JumpStone</h1>
-            <div class="btn-container">
-                <a href="#projects" class="cta-button">Meine Projekte</a>
-                <a href="#blog" class="cta-button">Blog</a>
-                <a href="https://grueneeule.de/dc" class="cta-button btn-secondary" target="_blank" rel="noopener noreferrer">GrüneEule Discord beitreten</a>
-            </div>
-        </div>
-    </section>
+          <img
+            src="/assets/img/1.1 (550x550).png"
+            alt="GrüneEule Logo"
+            class="hero-logo"
+          />
+          <div id="animation" class="large grid centered square-grid">
+            <h2
+              class="hero-title animated-heading"
+              style="font-size: 4rem; font-weight: bold; margin: 0"
+            >
+              JumpStone
+            </h2>
+          </div>
 
-    <section id="blog" class="news-section">
+          <div class="btn-container">
+            <a href="#projects" class="cta-button">Meine Projekte</a>
+            <a
+              href="https://grueneeule.de/dc"
+              class="cta-button btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Über mich</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Mein Blog</h2>
-            <div class="news-grid" id="news-container">
-                <!-- News werden hier via JavaScript eingefügt -->
-            </div>
-            <div class="text-center">
-                <a href="/de/blog/blog.html" class="cta-button">Alle Blogs</a>
-            </div>
+          <h2 class="section-title">Projekte</h2>
+          <div class="projects-grid">
+            <!-- Projekte werden hier dynamisch eingefügt -->
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projekte</h2>
-            <div class="projects-grid">
-                <!-- Projekte werden hier dynamisch eingefügt -->
-            </div>
-        </div>
-    </section>
-
-    <section class="social-section">
+      <section class="social-section">
         <div class="social-container">
-            <h2>Verbinde dich mit uns</h2>
-            <p class="social-description">
-                Tritt unserer Discord-Community bei und erhalte direkten Support, Updates und tausche dich mit anderen Nutzern aus!
-            </p>
-            <div class="tooltip-container">
-                <div class="tooltip">
-                    <div class="profile">
-                        <div class="user">
-                            <img src="https://grueneeule.de/assets/img/v2/GE-Symbol-Square_White_on_Green.png" alt="GrüneEule Logo" class="img">
-                            <div class="details">
-                                <div class="name">GrüneEule</div>
-                                <div class="username">Discord Guild</div>
-                            </div>
-                        </div>
-                        <div class="about">Coding Community</div>
-                    </div>
+          <h2>Tritt meinem Discord bei</h2>
+          <p class="social-description">
+            Tritt unserer Discord-Community bei und erhalte direkten Support,
+            Updates und tausche dich mit anderen Nutzern aus!
+          </p>
+          <div class="tooltip-container">
+            <div class="tooltip">
+              <div class="profile">
+                <div class="user">
+                  <img
+                    src="https://cdn.grueneeule.de/img/gruneeule.png"
+                    alt="GrüneEule Logo"
+                    class="img"
+                  />
+                  <div class="details">
+                    <div class="name">GrüneEule</div>
+                    <div class="username">Discord Guild</div>
+                  </div>
                 </div>
-                <div class="text">
-                    <a href="https://grueneeule.de/l/dc" class="social-icon" target="_blank" rel="noopener noreferrer">
-                        <div class="layer">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fab">
-                                <svg
-                                        preserveAspectRatio="xMidYMid"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 -3.117 28 28"
-                                        height="35"
-                                        width="35"
-                                >
-                                    <path
-                                            fill="#5865F2"
-                                            d="M23.719 1.815A22.8 22.8 0 0 0 17.942 0c-.249.45-.54 1.055-.74 1.536q-3.231-.486-6.402 0C10.6 1.055 10.302.45 10.051 0A22.7 22.7 0 0 0 4.27 1.82C.614 7.344-.377 12.731.119 18.042c2.425 1.811 4.775 2.911 7.085 3.63a17.6 17.6 0 0 0 1.517-2.499 15 15 0 0 1-2.389-1.163 12 12 0 0 0 .586-.463c4.607 2.155 9.613 2.155 14.165 0a14 14 0 0 0 .586.463 15 15 0 0 1-2.394 1.165c.438.877.945 1.714 1.517 2.499 2.312-.72 4.664-1.82 7.089-3.633.581-6.156-.993-11.494-4.162-16.227M9.349 14.776c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c.002 1.572-1.11 2.863-2.517 2.863m9.302 0c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c0 1.572-1.11 2.863-2.517 2.863"
-                                    ></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="discord-text">Discord</div>
-                    </a>
-                </div>
+                <div class="about">Coding Community</div>
+              </div>
             </div>
+            <div class="text">
+              <a
+                href="https://grueneeule.de/l/dc"
+                class="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="layer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="fab">
+                    <svg
+                      preserveAspectRatio="xMidYMid"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -3.117 28 28"
+                      height="35"
+                      width="35"
+                    >
+                      <path
+                        fill="#5865F2"
+                        d="M23.719 1.815A22.8 22.8 0 0 0 17.942 0c-.249.45-.54 1.055-.74 1.536q-3.231-.486-6.402 0C10.6 1.055 10.302.45 10.051 0A22.7 22.7 0 0 0 4.27 1.82C.614 7.344-.377 12.731.119 18.042c2.425 1.811 4.775 2.911 7.085 3.63a17.6 17.6 0 0 0 1.517-2.499 15 15 0 0 1-2.389-1.163 12 12 0 0 0 .586-.463c4.607 2.155 9.613 2.155 14.165 0a14 14 0 0 0 .586.463 15 15 0 0 1-2.394 1.165c.438.877.945 1.714 1.517 2.499 2.312-.72 4.664-1.82 7.089-3.633.581-6.156-.993-11.494-4.162-16.227M9.349 14.776c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c.002 1.572-1.11 2.863-2.517 2.863m9.302 0c-1.383 0-2.517-1.291-2.517-2.863s1.11-2.866 2.517-2.866 2.541 1.291 2.517 2.866c0 1.572-1.11 2.863-2.517 2.863"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="discord-text">Discord</div>
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Status Widget Section -->
-    <section class="status-widget">
+      <section class="source-section-footer">
         <div class="container">
-            <h2 class="section-title">Aktueller Systemstatus</h2>
-            <div id="status-container" class="status-container">
-                <div class="loading">Lade Statusinformationen...</div>
+          <div class="source-info">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <div class="source-text">
+              <h3>Open Source</h3>
+              <p>Siehe den Code dieser Seite auf GitHub</p>
             </div>
+          </div>
+          <a 
+            class="source-btn-footer"
+            id="source-btn"
+          >
+            <span>View Code</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
         </div>
-    </section>
+      </section>
+      
+      <div id="footer-container"></div>
+    </main>
 
-    <div id="footer-container"></div>
+    <button class="scroll-top" aria-label="Nach oben scrollen">↑</button>
 </main>
 
-<button class="scroll-top" aria-label="Nach oben scrollen">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script>
+      // Nur das h2 mit der Klasse 'hero-title' oder 'animated-heading' animieren
+      const split = new SplitType(".hero-title", { types: "chars" }); // Geändert zu .hero-title
+      const chars = split.chars;
 
-<script src="/assets/js/ui.js"></script>
-<script src="/assets/js/load-header.js"></script>
-<script src="/assets/js/load-footer.js"></script>
-<script src="/assets/js/news.js"></script>
-<script src="/assets/js/load-projects.js"></script>
-<script src="/assets/js/status-api.js"></script>
-<script src="/assets/js/language.js"></script>
-</script>
-</body>
+      // Gradient auf jedes Zeichen anwenden
+      chars.forEach((char) => {
+        char.style.background =
+          "linear-gradient(90deg, #2e8b57, #ff7f50, #8a2be2)";
+        char.style.backgroundSize = "300% 300%";
+        char.style.webkitBackgroundClip = "text";
+        char.style.webkitTextFillColor = "transparent";
+        char.style.backgroundClip = "text";
+      });
+
+      // Animation starten
+      anime({
+        targets: chars,
+        translateY: [
+          { value: "-2.75rem", easing: "easeOutExpo", duration: 600 },
+          { value: 0, easing: "easeOutBounce", duration: 800, delay: 100 },
+        ],
+        rotate: {
+          value: "-1turn",
+          delay: 0,
+        },
+        delay: anime.stagger(50),
+        easing: "easeInOutCirc",
+        loop: true,
+        loopDelay: 1000,
+      });
+    </script>
+    <script src="/assets/js/ui.js"></script>
+    <script src="/assets/js/load-header.js"></script>
+    <script src="/assets/js/load-footer.js"></script>
+    <script src="/assets/js/load-projects.js"></script>
+    <script src="/assets/js/source-button.js"></script>
+  </body>
 </html>

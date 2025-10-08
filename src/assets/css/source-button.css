@@ -1,0 +1,93 @@
+      /* Footer-Style Source Section */
+      .source-section-footer {
+        background: rgba(46, 139, 87, 0.05);
+        border-top: 1px solid rgba(46, 139, 87, 0.1);
+        padding: 2.5rem 0;
+        margin-top: 3rem;
+      }
+
+      .source-section-footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .source-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .source-info svg {
+        width: 32px;
+        height: 32px;
+        opacity: 0.6;
+      }
+
+      .source-text h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-color, #333);
+      }
+
+      .source-text p {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.85rem;
+        opacity: 0.7;
+      }
+
+      .source-btn-footer {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: #2e8b57;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: none;
+      }
+
+      .source-btn-footer:hover {
+        background: #1e5f3f;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(46, 139, 87, 0.3);
+      }
+
+      .source-btn-footer svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .source-section-footer .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .source-info {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .source-section-footer {
+          background: rgba(46, 139, 87, 0.08);
+          border-top-color: rgba(46, 139, 87, 0.2);
+        }
+
+        .source-text h3 {
+          color: #fff;
+        }
+      }

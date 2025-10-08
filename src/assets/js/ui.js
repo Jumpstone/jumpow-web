@@ -66,7 +66,7 @@ const newsObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.blog-card').forEach(card => {
+document.querySelectorAll('.news-card').forEach(card => {
     newsObserver.observe(card);
 });
 

@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "grueneeule",
+      "title": "GrüneEule",
+      "description": "Entdecke den Link Shortener den du brauchst:",
+      "features": [
+        "Open Source",
+        "Discord",
+        "Gaming",
+        "Tools"
+
+      ],
+      "primaryButton": {
+        "text": "Mehr",
+        "url": "https://grueneeule.de/",
+        "class": "btn-discord"
+      },
+      "cardClass": "toollab-card"
+    }
+  ]
+}

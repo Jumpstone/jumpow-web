@@ -356,8 +356,8 @@ main {
     border-top: 3px solid var(--accent-orange);
 }
 
-.wee-card {
-    border-top: 3px solid var(--accent-green);
+.gaming-card {
+    border-top: 3px solid var(--dlg-red);
 }
 
 .toollab-card {
@@ -383,8 +383,8 @@ main {
     color: var(--discord-blue);
 }
 
-.wee-card h3 {
-    color: var(--accent-green);
+.gaming-card h3 {
+    color: var(--dlg-red);
 }
 
 
@@ -1197,4 +1197,396 @@ footer {
 }
 .language-option:hover {
     background: #393939;
+}
+
+
+/* Neue CSS-Regeln für die Navigation mit Social Media Buttons */
+/* .nav-content {
+/*   display: flex;
+/*   align-items: center;
+/*   gap: 2rem;
+/* }
+
+/* Anpassungen für die Social Media Buttons im Header */
+/* header .social-card {
+/*   background: transparent;
+/*   padding: 0;
+/*   gap: 10px;
+/* }
+
+header .Btn {
+  width: 40px;
+  height: 40px;
+}
+
+header .svgContainer {
+  border: 1px solid var(--border-color);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1024px) {
+  .nav-content {
+    gap: 1rem;
+  }
+  
+  header .social-card {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    order: 2;
+  }
+  
+  header .social-card {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Anpassungen für die Social Media Buttons im Header */
+header .social-card {
+  background: transparent;
+  padding: 0;
+  gap: 10px;
+  margin-left: auto; /* Das schiebt die Buttons nach rechts */
+}
+
+header .Btn {
+  width: 40px;
+  height: 40px;
+}
+
+header .svgContainer {
+  border: 1px solid var(--border-color);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1024px) {
+  header .social-card {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .social-card {
+    display: none; /* Auf mobilen Geräten ausblenden */
+  }
+  
+  /* Alternative: Mobile Social Media Buttons */
+  .mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+/* Navigation Layout Anpassungen */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1024px) {
+  .nav-center {
+    position: static;
+    transform: none;
+    order: 2;
+  }
+  
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    order: 1;
+  }
+  
+  .nav-right {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-center {
+    width: 100%;
+    order: 3;
+    margin-top: 1rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+#animation .text-xl {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+}
+
+/* Hervorgehobener Source Button */
+.source-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, var(--main-color), var(--main-dark));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.source-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(46, 139, 87, 0.4);
+  background: linear-gradient(135deg, var(--main-dark), var(--main-color));
+}
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+  .source-btn span {
+    display: none;
+  }
+  
+  .source-btn {
+    padding: 10px;
+  }
+  
+  .source-btn svg {
+    margin: 0;
+  }
+}
+
+/* Navigation Layout Anpassungen */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+/* Social Media Buttons im Header */
+header .social-card {
+  display: flex;
+  gap: 8px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+header .Btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+header .social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+header .Btn:hover .svgContainer {
+  border-color: var(--main-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Source Button Styling */
+.source-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, var(--main-color), var(--main-dark));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-glow);
+  white-space: nowrap;
+}
+
+.source-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(46, 139, 87, 0.4);
+  background: linear-gradient(135deg, var(--main-dark), var(--main-color));
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1024px) {
+  .nav-center {
+    position: static;
+    transform: none;
+    order: 2;
+  }
+  
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .logo {
+    order: 1;
+  }
+  
+  .nav-right {
+    order: 3;
+    margin-left: 0;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-center {
+    width: 100%;
+    order: 3;
+    margin-top: 1rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nav-right {
+    order: 2;
+    gap: 0.5rem;
+  }
+  
+  header .social-card {
+    gap: 6px;
+  }
+  
+  header .Btn {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .source-btn span {
+    display: none;
+  }
+  
+  .source-btn {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.8rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  
+  header .social-card {
+    display: none;
+  }
+  
+  /* Mobile Social Media Buttons alternative */
+  .mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
 }
