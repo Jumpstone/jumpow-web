@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "News Modul endlich fertig!",
+    "date": "2025-07-22",
+    "content": "Wir freuen uns, unser neues News Modul vorzustellen!",
+    "image": "https://grueneeule.de/assets/img/news/1.png",
+    "fullContentPath": "https://grueneeule.de/assets/data/news/1.md"
+  },
+  {
+    "id": 2,
+    "title": "tWfEE RELEASE JETZT ONLINE",
+    "date": "2025-07-23",
+    "content": "Die tWfEE Seite wurde veröffentlich!",
+    "image": "https://grueneeule.de/assets/img/news/2.png",
+    "fullContentPath": "https://grueneeule.de/assets/data/news/2.md"
+  },
+  {
+    "id": 3,
+    "title": "tWfEE RELEASE JETZT ONLINE",
+    "date": "2025-07-23",
+    "content": "Die tWfEE Seite wurde veröffentlich!",
+    "image": "https://grueneeule.de/assets/img/news/2.png",
+    "fullContentPath": "https://grueneeule.de/assets/data/news/2.md"
+  }
+]
