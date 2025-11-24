@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henry | JumpStone</title>
+    <title>Henry | Portfolio</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +20,8 @@
         --border-color: #27272a;
         --text-main: #e4e4e7;
         --text-muted: #a1a1aa;
-        --accent-primary: #10b981; /* Changed to a vibrant green */
-        --accent-secondary: #a855f7; /* Purple gradient hint, kept original */
+        --accent-primary: #3b82f6; /* Blue like screenshot icons */
+        --accent-secondary: #a855f7; /* Purple gradient hint */
         --font-main: "Inter", sans-serif;
         --font-mono: "JetBrains Mono", monospace;
       }
@@ -141,7 +141,6 @@
       }
 
       .hero-name {
-        /* ANPASSUNG: Gradient von Weiß zu Grün */
         background: linear-gradient(45deg, #fff, var(--accent-primary));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -201,14 +200,10 @@
         border: 1px solid var(--border-color);
         padding: 1rem;
         border-radius: 8px;
+        text-align: center;
         font-family: var(--font-mono);
         font-size: 0.85rem;
         transition: transform 0.2s, border-color 0.2s;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Zentriert horizontal */
-        justify-content: center;
       }
 
       .tech-item:hover {
@@ -218,9 +213,8 @@
 
       .tech-item i {
         display: block;
-        margin-bottom: 0.75rem;
-        color: var(--accent-primary); /* Akzentfarbe für Icons */
-        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-main);
       }
 
       /* --- PROJECTS GRID (Wie im Screenshot) --- */
@@ -395,34 +389,20 @@
       <section id="stack">
         <h2>Tech Stack & Skills</h2>
         <div class="tech-grid">
-          <div class="tech-item"><i data-lucide="monitor"></i> PHP</div>
-          <div class="tech-item"><i data-lucide="code"></i> HTML / CSS</div>
-          <div class="tech-item">
-            <i data-lucide="file-text"></i> JavaScript
-          </div>
-          <div class="tech-item">
-            <i data-lucide="git-branch"></i> Git / DevOps
-          </div>
+          <div class="tech-item">PHP</div>
+          <div class="tech-item">HTML / CSS</div>
+          <div class="tech-item">JavaScript</div>
+          <div class="tech-item">Git / DevOps</div>
 
-          <div class="tech-item">
-            <i data-lucide="coffee"></i> Java (Velocity)
-          </div>
-          <div class="tech-item">
-            <i data-lucide="server"></i> Minecraft APIs
-          </div>
-          <div class="tech-item">
-            <i data-lucide="webhook"></i> Discord OAuth2
-          </div>
-          <div class="tech-item">
-            <i data-lucide="terminal"></i> Linux / Bash
-          </div>
+          <div class="tech-item">Java (Velocity)</div>
+          <div class="tech-item">Minecraft APIs</div>
+          <div class="tech-item">Discord OAuth2</div>
+          <div class="tech-item">Linux / Bash</div>
 
-          <div class="tech-item"><i data-lucide="zap"></i> Elektronik</div>
-          <div class="tech-item">
-            <i data-lucide="hard-drive"></i> Hardware Build
-          </div>
-          <div class="tech-item"><i data-lucide="chip"></i> ZimaBoard</div>
-          <div class="tech-item"><i data-lucide="battery"></i> BMS / Akkus</div>
+          <div class="tech-item">Elektronik</div>
+          <div class="tech-item">Hardware Build</div>
+          <div class="tech-item">ZimaBoard</div>
+          <div class="tech-item">BMS / Akkus</div>
         </div>
       </section>
 
@@ -496,7 +476,7 @@
       </section>
 
       <footer>
-        <p>© 2025 Henry | JumpStone. All rights reserved.</p>
+        <p>© 2025 Henry. All rights reserved.</p>
         <div
           style="
             margin-top: 10px;

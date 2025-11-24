@@ -1,0 +1,170 @@
+Erstelle eine moderne, vollständig responsive Portfolio-Webseite unter Verwendung von HTML, CSS und JS.
+1. Design & Layout: Orientiere dich strikt an den zwei angehängten Screenshots. Versuche, das Grid-Layout, die Typografie-Hierarchie und die Farbpalette dieser Referenzbilder zu replizieren. Nutze moderne UI-Elemente (z.B. sanfte Schatten, abgerundete Ecken), passend zu den Bildern.
+2. Inhalt & Datenverarbeitung: Ich habe ein Dokument mit meinem Persönlichkeitsprofil angehängt. Bitte extrahiere daraus:
+
+Einen kurzen, prägnanten Slogan für den Header.
+Einen professionellen Vorstellungstext für die 'About Me'-Sektion.
+Relevante Soft-Skills, falls im Design passend.
+3. Gewünschte Sektionen:
+
+Hero: Mit Name und Slogan.
+About Me: Basierend auf dem Profiltext.
+Tech Stack: Ein Grid oder eine Liste mit modernen Icons (nutze lucide-react oder FontAwesome), die meine Fähigkeiten repräsentieren.
+Projekte: Eine Galerie/Grid-Ansicht. Jedes Projekt-Element muss Titel, kurze Beschreibung und zwingend einen Link (Anker-Tag oder Button) zur Zielseite enthalten.
+Kontakt/Footer: Mit Platzhaltern für Social Media Links.
+Der Code soll in einer einzigen Datei (Single File Component) ausgegeben werden und direkt ausführbar sein.
+
+Erstelle eine moderne, vollständig responsive Portfolio-Webseite unter Verwendung von HTML, CSS und JS.
+
+1. Design & Layout: Orientiere dich strikt an den zwei angehängten Screenshots. Versuche, das Grid-Layout, die Typografie-Hierarchie und die Farbpalette dieser Referenzbilder zu replizieren. Nutze moderne UI-Elemente (z.B. sanfte Schatten, abgerundete Ecken), passend zu den Bildern.
+
+2. Inhalt & Datenverarbeitung: Ich habe ein Dokument mit meinem Persönlichkeitsprofil angehängt. Bitte extrahiere daraus:
+
+
+
+
+
+Einen kurzen, prägnanten Slogan für den Header.
+
+
+
+Einen professionellen Vorstellungstext für die 'About Me'-Sektion.
+
+
+
+Relevante Soft-Skills, falls im Design passend.
+
+3. Gewünschte Sektionen:
+
+
+
+
+
+Hero: Mit Name und Slogan.
+
+
+
+About Me: Basierend auf dem Profiltext.
+
+
+
+Tech Stack: Ein Grid oder eine Liste mit modernen Icons (nutze lucide-react oder FontAwesome), die meine Fähigkeiten repräsentieren.
+
+
+
+Projekte: Eine Galerie/Grid-Ansicht. Jedes Projekt-Element muss Titel, kurze Beschreibung und zwingend einen Link (Anker-Tag oder Button) zur Zielseite enthalten.
+
+
+
+Kontakt/Footer: Mit Platzhaltern für Social Media Links.
+
+Der Code soll in einer einzigen Datei (Single File Component) ausgegeben werden und direkt ausführbar sein.
+
+
+Persönliches Profil
+
+1. Grunddaten
+
+Ich heiße Henry Meyer. Ich wohne bei Osnabrück. Meine Muttersprache ist Deutsch.
+
+2. Überblick — wer ich bin
+
+Ich bin technikinteressiert, praktisch veranlagt und lösungsorientiert. Ich beschäftige mich mit Software- und Hardwareprojekten, die weit über typische Schulprojekte hinausgehen. Ich arbeite gerne an eigenen Systemen, baue Dinge selbst und dokumentiere Abläufe klar und strukturiert. Ich mag direkte, pragmatische Kommunikation und möchte, dass Fehler sofort und klar angesprochen werden.
+
+3. Wichtige Projekte und praktische Erfahrungen (detailliert)
+
+DMH-Network (Minecraft)
+
+Ich habe zusammen mit Daniel R. und Matti (Mattrix) das Minecraft-Netzwerk „DMH-Network“ gegründet. Schwerpunkte: Survival (Hauptfokus), zusätzlich Bedwars und MetroBuild. Wir nutzen selbstprogrammierte Plugins, setzen Velocity ein, benutzen TAB für Velocity und planen, das Better Teams Plugin auf einem SurvivalBase-Server anzuzeigen. Das Netzwerk unterstützt sowohl Java- als auch Bedrock-Spieler und deckt Minecraft-Versionen von 1.8 bis 1.21.4 ab, wobei der Schwerpunkt auf 1.21.4 liegt.
+
+GrüneEule — Website & Bots
+
+Ich arbeite an der Website „GrüneEule“ und entwickle dazu Bots. Für die Bots plane ich ein Dashboard mit Discord OAuth2-Authentifizierung. Ich kenne die notwendigen Abläufe für OAuth2-Integration und Bot-Management.
+
+Eigenes Website-Editor-System inkl. Git-Einbindung
+
+Planung und Bau eines tragbaren Systems auf Basis des ZimaBoard2, eingebaut in ein B&W Outdoor Case Typ 4000 (38×26×16 cm). Komponenten/Pläne umfassen:
+
+Mechanische Tastatur (Dierya DK63, 60%), Trackball-ähnliches Eingabegerät.
+
+Bildschirm (10,5" mit USB-C/HDMI).
+
+Bluetooth, WLAN, mehrere USB-Ports, LAN-Port.
+
+Akku-Lösung: 3S 18650 mit BMS; Schaltung, Sicherheit und Platzierung sind berücksichtigt.
+
+Kippschalter mit grüner Klappe und Status-LED; alles so verbauen, dass das Case außen schmutzresistent bleibt.
+
+Elektrik / LEDs
+
+Für 2 Meter LED-Streifen (60 LEDs/m) habe ich berechnet, dass ein Netzteil mit 40 Watt notwendig ist.
+
+Domain-Besitz
+
+Ich besitze die Domain dmh-network.de. Das Projekt DMH existiert nicht mehr aktiv, aber ich möchte die Domain behalten und eventuell als Untermarke von „GrüneEule“ verwenden.
+
+4. Technische Fähigkeiten — konkret
+
+Programmiersprachen & Web: PHP (geplant/aktiv), HTML/CSS/JS-Kenntnisse implizit durch Webprojekte.
+
+Server/Netzwerk: Erfahrung mit Minecraft-Server-Ökosystem (Velocity, Plugins, Crossplay Java/Bedrock), Serverkonfigurationen, Multi-Version-Support.
+
+DevOps/Versionskontrolle: Git-Workflows, automatische Git-Pushes aus eigenen Tools, Strukturierung von Repositories.
+
+Sicherheit/Deployment: Umgang mit sensiblen Zugangsdaten (.env), Grundverständnis für sichere Speicherung.
+
+Hardware/Elektronik: Akku-Management (3S 18650 + BMS), Elektroplanung für LEDs und Peripherie, Integration von Displays und Eingabegeräten.
+
+Bot-/API-Integration: Discord-Bots, OAuth2-Flows, Dashboard-Integration.
+
+5. Arbeitsweise & Methodik
+
+Systematisch: Ich plane Abläufe end-to-end (z. B. Login → Editor → Speichern → Git → Repository).
+
+Hands-on: Ich lerne durch Ausprobieren und baue funktionierende Prototypen.
+
+Detailorientiert: Ich lege Wert auf klare Dateistrukturen, automatische Benennungsregeln und Konfigurationssicherheit.
+
+Pragmatisch: Ich bevorzuge einfache, wartbare Lösungen statt unnötiger Komplexität.
+
+Autodidaktisch: Vieles habe ich mir selbst angeeignet; ich nutze Dokumentation, Testen und iterative Verbesserung.
+
+6. Persönlichkeit & Kommunikation
+
+Direkt: Ich mag klare, ehrliche Rückmeldungen und will, dass Fehler offen angesprochen werden.
+
+Pragmatisch: Keine Schönfärberei; ich will Fakten und umsetzbare Schritte.
+
+Neugierig & experimentierfreudig: Ich probiere neue Dinge aus und scheue mich nicht vor komplexen Herausforderungen.
+
+Teamfähig: Ich habe bereits mit anderen (Daniel, Matti) größere Projekte umgesetzt, kann also zusammenarbeiten und koordinieren.
+
+7. Präferenzen & Stil
+
+Kommunikation: Kurze Einleitungen, direkte Sprache, keine unnötigen Ausschmückungen.
+
+Technik: Praxisnahe, robuste Lösungen; Fokus auf Kompatibilität (z. B. Multi-Version-Support bei Minecraft).
+
+Sicherheit: Sensible Daten sollen nicht öffentlich gespeichert werden (.env statt Repo).
+
+8. Schwächen / Bereiche zum Verbessern (ehrlich)
+
+Alter/Erfahrung: Aufgrund meines jungen Alters können bei konkreten Geschäftskontakten, rechtlichen Themen oder komplexem Deployment Limitierungen bestehen.
+
+Deployment/Scaling: Automatisiertes, sicheres Deployment auf Produktionsniveau ist noch in Arbeit/Planung.
+
+Formale Sicherheit/Compliance: Ich habe ein Grundverständnis für Sicherheit, aber bei rechtlichen oder umfangreichen Sicherheitszertifizierungen fehlt noch tiefe Erfahrung.
+
+Zeitmanagement bei großen Projekten: Große Langzeitprojekte können Ressourcen und Zeit beanspruchen; Priorisierung ist wichtig.
+
+9. Konkrete, sofort umsetzbare Empfehlungen für mich (Kurz & klar)
+
+Schreibe eine klare README für /src/editor mit Dateikonventionen und Beispiel-Workflow.
+
+Automatisiere Git-Pushes nur mit einem sicheren CI-Token, das in der .env liegt (nicht im Repo).
+
+Mache ein Backup-Konzept für Benutzerdateien, speziell für das unnamed-Verzeichnis.
+
+Teste OAuth2-Flows mit mehreren Discord-Accounts (Testserver) bevor Live-Rollout.
+
+Dokumentiere Akku-Sicherheitsregeln schriftlich (BMS, Ladezyklen, Abschaltlogik).
