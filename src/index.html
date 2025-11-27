@@ -68,17 +68,44 @@
         opacity: 0.6;
       }
 
+      /* NEU: HEADER STYLING FÜR DEN BUTTON */
+      .header-nav {
+        position: fixed; /* Fixiert, damit er immer sichtbar ist */
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        z-index: 100;
+        /* Leicht transparenter Hintergrund, damit man den Grid-Effekt noch sieht */
+        background-color: rgba(5, 5, 5, 0.8);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .header-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-end; /* Button nach rechts schieben */
+        align-items: center;
+      }
+
       /* --- LAYOUT --- */
       .container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 0 20px;
+        /* NEU: Zusätzlicher Top-Padding, um Platz für den Header zu schaffen */
+        padding-top: 70px;
       }
 
       section {
         margin-bottom: 100px;
         padding-top: 60px;
       }
+
+      /* ... (Unveränderte Styles) ... */
 
       /* --- TYPOGRAPHY --- */
       h1,
@@ -157,6 +184,28 @@
         margin-top: 2rem;
         display: flex;
         gap: 1rem;
+      }
+
+      /* NEU: Button-Stil für den Header-Button (basierend auf social-btn) */
+      .header-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        color: var(--text-main); /* Sicherstellen, dass der Text sichtbar ist */
+      }
+      .header-btn i {
+        color: var(--accent-primary); /* Icon in Akzentfarbe */
+      }
+
+      .header-btn:hover {
+        background: var(--border-color);
+        color: #fff;
       }
 
       .social-btn {
@@ -352,15 +401,23 @@
   <body>
     <div class="grid-bg"></div>
 
+    <header class="header-nav">
+      <div class="header-content">
+        <a
+          href="readme.html"
+          class="header-btn"
+          title="Gesamte README im Detail anzeigen"
+        >
+          <i data-lucide="book-open"></i> Als README anzeigen
+        </a>
+      </div>
+    </header>
+
     <div class="container">
       <section class="hero">
         <span class="hero-badge">Portfolio 2025</span>
         <h1>Hallo, ich bin <span class="hero-name">Henry</span>.</h1>
-        <p class="hero-desc">
-          Developer & Hardware Enthusiast aus Osnabrück. Ich entwickle
-          pragmatische Softwarelösungen und baue maßgeschneiderte
-          Hardware-Systeme. Lösungsorientiert. Direkt. Hands-on.
-        </p>
+        <p class="hero-desc">Developer & Hardware Enthusiast aus Osnabrück.</p>
 
         <div class="social-links">
           <a
@@ -369,6 +426,16 @@
             class="social-btn"
           >
             <i data-lucide="github"></i> GitHub
+          </a>
+          <a href="https://jumpow.de" target="_blank" class="social-btn">
+            <i data-lucide="globe"></i> Website
+          </a>
+          <a
+            href="https://discord.com/users/1008346032230387752"
+            target="_blank"
+            class="social-btn"
+          >
+            Discord
           </a>
         </div>
       </section>
@@ -489,6 +556,7 @@
     </div>
 
     <script>
+      // Die Icons müssen am Ende des Bodys erstellt werden, um alle Elemente zu finden
       lucide.createIcons();
     </script>
   </body>
