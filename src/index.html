@@ -32,6 +32,10 @@
         padding: 0;
       }
 
+      html {
+        scroll-behavior: smooth; /* Damit das Scrollen weich ist */
+      }
+
       body {
         background-color: var(--bg-color);
         color: var(--text-main);
@@ -150,6 +154,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative; /* Wichtig für die Positionierung der Maus */
         animation: fadeIn 1s ease-out;
       }
 
@@ -184,6 +189,56 @@
         margin-top: 2rem;
         display: flex;
         gap: 1rem;
+      }
+
+      /* --- SCROLL DOWN MOUSE ANIMATION (NEU) --- */
+      .scroll-down-container {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+      }
+
+      .scroll-down-container:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .mouse {
+        width: 26px;
+        height: 42px;
+        border: 2px solid var(--text-muted);
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .wheel {
+        width: 4px;
+        height: 8px;
+        background: var(--accent-primary);
+        border-radius: 2px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scroll 1.5s infinite;
+      }
+
+      @keyframes scroll {
+        0% {
+          opacity: 1;
+          top: 6px;
+        }
+        50% {
+          opacity: 1;
+          top: 18px;
+        }
+        100% {
+          opacity: 0;
+          top: 18px;
+        }
       }
 
       /* NEU: Button-Stil für den Header-Button (basierend auf social-btn) */
@@ -438,6 +493,16 @@
             Discord
           </a>
         </div>
+
+        <a
+          href="#about"
+          class="scroll-down-container"
+          title="Nach unten scrollen"
+        >
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </a>
       </section>
 
       <section id="about">
