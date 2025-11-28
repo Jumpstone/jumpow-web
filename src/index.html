@@ -615,14 +615,81 @@
         </div>
       </section>
 
+      <section id="github-projekte">
+        <h2>Meine GitHub Projekte</h2>
+        <div class="projects-grid" id="repo-list">
+          <div class="loading">Lade Repositories von Jumpstone...</div>
+        </div>
+      </section>
+
       <footer>
         <p>© 2025 Henry | JumpStone. All rights reserved.</p>
       </footer>
     </div>
 
     <script>
-      // Die Icons müssen am Ende des Bodys erstellt werden, um alle Elemente zu finden
+      // Init Icons für statischen Content
       lucide.createIcons();
+
+      const username = "Jumpstone";
+
+      async function loadRepos() {
+        const repoList = document.getElementById("repo-list");
+
+        try {
+          const response = await fetch(
+            `https://api.github.com/users/${username}/repos?sort=pushed`
+          );
+          if (!response.ok) throw new Error("API Limit or Network Error");
+          const repos = await response.json();
+
+          repoList.innerHTML = "";
+
+          repos.forEach((repo) => {
+            // Erstelle Card
+            const card = document.createElement("div");
+            card.className = "project-card";
+
+            // Beschreibung kürzen falls zu lang, oder Standardtext
+            const desc = repo.description
+              ? repo.description
+              : "Keine Beschreibung verfügbar.";
+            const lang = repo.language ? repo.language : "Code";
+
+            card.innerHTML = `
+                        <div class="project-header">
+                            <div class="project-icon"><i data-lucide="folder-git"></i></div>
+                            <span class="project-title">${repo.name}</span>
+                        </div>
+                        <p class="project-desc">${desc}</p>
+                        <div class="tags">
+                             <span class="tag">${lang}</span>
+                             <span class="tag">★ ${repo.stargazers_count}</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="${repo.html_url}" target="_blank" class="btn-small">
+                                <i data-lucide="github"></i> Repository
+                            </a>
+                        </div>
+                    `;
+
+            repoList.appendChild(card);
+          });
+
+          // WICHTIG: Icons neu initialisieren für die dynamisch erstellten Elemente
+          lucide.createIcons();
+        } catch (error) {
+          console.error(error);
+          repoList.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align:center; color: var(--text-muted);">
+                        Fehler beim Laden der Projekte oder API-Limit erreicht. <br>
+                        <a href="https://github.com/${username}" target="_blank" style="color:var(--accent-primary); text-decoration:underline;">Direkt auf GitHub ansehen</a>
+                    </div>
+                `;
+        }
+      }
+
+      loadRepos();
     </script>
   </body>
 </html>
